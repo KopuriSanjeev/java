@@ -2,9 +2,6 @@ package numbers;
 
 public class SwapNumbers {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		int a = 10, b = 20;
 		System.out.println("Values before swap: " + "a="+a + " b="+b);
