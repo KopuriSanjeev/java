@@ -1,5 +1,8 @@
 package strings;
 
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
 public class WordsInReverse {
 
 	/**
@@ -12,6 +15,7 @@ public class WordsInReverse {
 		String str = "I love my    country India" ;
 		System.out.println("Actual statement is :" + str);
 		reverseWords(str);
+		method2(str);
 
 	}
 	
@@ -26,6 +30,27 @@ public class WordsInReverse {
 		
 		System.out.println("Statement after reverse is:" + reverse);
 	}
+	
+	//method 2 uses StringTokenizer. This is well suite if you have multiple spaces between words.
+	public static void method2(String str)
+	{
+		StringTokenizer st = new StringTokenizer(str," ");
+
+		// strReverseLine is the function used to reverse a string.
+		String strReversedLine = "";
+		try
+		{
+			while(st.hasMoreTokens())
+		    {
+				strReversedLine = st.nextToken() + " " + strReversedLine;
+			}
+			System.out.println("Reversed string using StringTokenizer is : " + strReversedLine);
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+	}
 
 }
 
@@ -34,6 +59,7 @@ public class WordsInReverse {
 
 The output of the above program is :
 Actual statement is :I love my    country India
-Statement after reverse is:India country    my love I
+Statement after reverse is:India country    my love I 
+Reversed string using StringTokenizer is : India country my love I 
 
 */ 
