@@ -15,6 +15,10 @@ public class StringReverse {
 		// method2. String class doesn't have reverse() method. whereas StringBuffer has. 
 		// So convert String to StringBuffer to reverse.
 		method2(str);
+		
+		// method3 using recursion.
+		String rev = usingRecersion(str);
+		System.out.println("Reverse of String " + str + " using method3 recursion is " + rev);
 	}
 	
 	public static void method1(String str)
@@ -41,11 +45,20 @@ public class StringReverse {
 		System.out.println("Reverse of String " + str + " using method2 is " + revStr);
 	}
 
+	public static String usingRecersion(String s)
+	{
+		if(s==null || s.length() <= 1)
+			return s;
+		else
+			return usingRecersion(s.substring(1)) + s.charAt(0) ;
+			
+	}
+	
 }
 
 /*	The output of the above program is 
     Reverse of String hyderabad using method1 is dabaredyh
 	Reverse of String hyderabad using method2 is dabaredyh
-
+	Reverse of String hyderabad using method3 recursion is dabaredyh
  */
 
