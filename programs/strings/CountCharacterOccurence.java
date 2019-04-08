@@ -32,7 +32,7 @@ public class CountCharacterOccurence {
 	// string length - string length without that character.
 	public static void withOutUsingLoop(String s,char ch)
 	{
-		int count = s.length() - s.replaceAll("a", "").length() ;
+		int count = s.length() - s.replaceAll(ch+"", "").length() ;
 		
 		System.out.println("No. of occurences of "+ ch + " in \"" +s + "\" is " + count);
 	}
