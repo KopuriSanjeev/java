@@ -1,3 +1,13 @@
 This is used for Java interview preparation.
 
 This includes both programs and concepts as well.
+
+
+
+interview_preparation (folder)
+|
+|
+ -- materials (folder contains materials of java, which deals with concepts)
+ --programs (folder contains sub folders of programs based on concepts eg. programs on String, Numbers, java8 etc)
+ --interview questions (folder contains interview questions data)
+ 
