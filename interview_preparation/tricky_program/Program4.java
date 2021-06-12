@@ -24,5 +24,6 @@ Explanation:
 As the string content is different, two string objects are created.
 So reference of them is different.
 
+If you want to do content comparision, then we have go for equals() method or equalsIgnoreCase() methods of String class.
 
 */
