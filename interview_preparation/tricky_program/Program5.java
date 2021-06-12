@@ -24,6 +24,8 @@ Apple
 Explanation:
 IFruit is an interface and Fruits class implements it.
 So type string is available in Fruit class as well which is an static string.
+By default variables in Interface are public,static and final.
+By default methods in Interface are public and abstract. (From java8 onwards default and static methods are also allowed)
 So from Program5 class we can access static type of variable type.
 
 */
