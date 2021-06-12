@@ -1,0 +1,1 @@
+This folder contains differenct pdfs, notes etc related to java interview questions.
