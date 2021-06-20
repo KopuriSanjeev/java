@@ -15,7 +15,7 @@ class LongestSubString
 		String longestTillNow = "";
 		String longestOverall = "";
 		
-		for(int i=0;i<str.length();i++)
+		for(int i=0,n=s.length() ;i<n; i++)
 		{
 			char ch = str.charAt(i);
 			if(set.contains(ch))
