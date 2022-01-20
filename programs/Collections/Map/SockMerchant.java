@@ -19,15 +19,11 @@ public class Test {
 	
 		int[] ar = new int[]{10, 20, 20, 10, 10, 30, 50, 10, 20};
 		Map<Integer,Integer> m = new HashMap<Integer,Integer>();
-		int count = 0;
 		int pairs = 0;
 		for(int i: ar)
 		{
 			if(m.containsKey(i))
-			{
-				count = m.get(i);
-				m.put(i, ++count);
-			}
+				m.put(i,m.get(i)+1);
 			else
 				m.put(i, 1);
 		}
